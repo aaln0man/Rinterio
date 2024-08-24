@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/c85695539b.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    
+    <header>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <i class="rounded-full p-1 bg-green-600 -rotate-45 fa-solid fa-arrow-right"></i>
+              <a class="btn btn-ghost text-xl">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="font-bold">Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+             <div class="inline-flex gap-2">
+              <button class="btn hidden lg:flex rounded-full"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button class="btn hidden lg:flex rounded-full"><i class="fa-solid fa-cart-shopping"></i></button>
+                <a class="btn hidden lg:flex rounded-3xl bg-green-500">Book Consult<i class="rounded-full p-1 bg-black text-white -rotate-45 fa-solid fa-arrow-right"></i></a>
+             </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-base-200 rounded-full">
+                      <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+            </div>
+            
+          </div>
+    </header>
 </body>
 </html>
